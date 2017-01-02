@@ -1,0 +1,97 @@
+1. Activity A is triggered when the App is launched this is by default
+---the system calls the onCreate() method for the Activity A in the app that is declared to be the "launcher" activity, this is the entry
+point. The activity A becomes visible to the user when onStart() is called, but onResume() quickly follows and the activity A remains in 
+the Resumed state---
+09-18 12:06:54.375  2349  2349 D ssonawa1:: ActivityA(1): OnCreate()
+09-18 12:06:54.378  2349  2349 D ssonawa1:: ActivityA(2): onStart()
+09-18 12:06:54.380  2349  2349 D ssonawa1:: ActivityA(3): onResume()
+2. Activity B is triggered
+----Activity A is paused, activity A is partially obsured by Activity B. As activity A enters the paused state, the system calls the 
+onPause() method in Activity A. The system calls the onCreate() method for the Activity B in the app point. The activity B becomes visible 
+to the user when onStart() is called, but onResume() quickly follows and the activity B remains in the Resumed state-----
+09-18 14:15:52.876  2349  2349 D ssonawa1:: ActivityA(4): onPause()
+09-18 14:15:52.926  2349  2349 D ssonawa1:: ActivityB(1): OnCreate()
+09-18 14:15:52.927  2349  2349 D ssonawa1:: ActivityB(2): onStart()
+09-18 14:15:52.927  2349  2349 D ssonawa1:: ActivityB(3): onResume()
+/*-------------------Activity A is completely stopped, in this state activity A is completely hidden and not visible to the user-----*/
+09-18 14:15:53.739  2349  2349 D ssonawa1:: ActivityA(5): onStop()
+3. Activity C is triggered
+---Activity B is paused activity B is partially obsured by Activity C. As activity B enters the paused state, 
+the system calls the onPause() method in Activity B. The system calls the onCreate() method for the Activity C. The activity C becomes 
+visible to the user when onStart() is called, but onResume() quickly follows and the activity C remains in the Resumed state-----
+09-18 14:21:20.753  2349  2349 D ssonawa1:: ActivityB(4): onPause()
+09-18 14:21:20.781  2349  2349 D ssonawa1:: ActivityC(1): OnCreate()
+09-18 14:21:20.783  2349  2349 D ssonawa1:: ActivityC(2): onStart()
+09-18 14:21:20.785  2349  2349 D ssonawa1:: ActivityC(3): onResume()
+/*----------------Activity B is completely stopped, in this state activity B is completely hidden and not visible to the user-------------*/
+09-18 14:21:21.682  2349  2349 D ssonawa1:: ActivityB(5): onStop()
+4. Dialog is triggered
+---Activity C goes from Resumed to Paused state---
+09-18 14:27:14.027  2349  2349 D ssonawa1:: ActivityC(4): onPause()
+5. Stack soft key is pressed
+---Activity C resumes itself then goes to Paused state then to Stop, in this state activity C is completely hidden and not visible 
+to the user---
+09-18 14:28:49.133  2349  2349 D ssonawa1:: ActivityC(5): onResume()
+09-18 14:28:52.882  2349  2349 D ssonawa1:: ActivityC(6): onPause()
+09-18 14:28:52.906  2349  2349 D ssonawa1:: ActivityC(7): onStop()
+6. Back soft key is pressed
+---Activity C is resuming from Stopped state when OnRestart is called. The system also calls the onStart() method, which happens every 
+time your activity becomes visible whether being restarted or created for the first time.---
+09-18 14:30:45.440  2349  2349 D ssonawa1:: ActivityC(8): onRestart()
+09-18 14:30:45.441  2349  2349 D ssonawa1:: ActivityC(9): onStart()
+09-18 14:30:45.441  2349  2349 D ssonawa1:: ActivityC(10): onResume() 
+7. Start A is triggred
+The system calls onDestroy() method on your activity B as the final signal that your activity instance is being completely removed from 
+the system memory. Activity C is paused activity C is partially obsured by Activity A. As activity C enters the paused state, 
+the system calls the onPause() method in Activity C. Activity A is resuming from Stopped state when OnRestart is called. The system also 
+calls the onStart() method, which happens every time your activity becomes visible whether being restarted or created for the first time.
+The system calls onDestroy() method on your activity C as the final signal that your activity instance is being completely removed from 
+the system memory.
+09-18 14:41:31.838  2350  2350 D ssonawa1:: ActivityB(6): onDestroy()
+09-18 14:41:31.895  2350  2350 D ssonawa1:: ActivityC(11): onPause()
+09-18 14:41:31.947  2350  2350 D ssonawa1:: ActivityA(6): onRestart()
+09-18 14:41:31.950  2350  2350 D ssonawa1:: ActivityA(7): onStart()
+09-18 14:41:31.950  2350  2350 D ssonawa1:: ActivityA(8): onResume()
+09-18 14:41:32.937  2350  2350 D ssonawa1:: ActivityC(12): onStop()
+09-18 14:41:32.937  2350  2350 D ssonawa1:: ActivityC(13): onDestroy()
+8. Home key is triggered
+---The activity A goes from Resumed state to Paused then to Stop.--- 
+09-18 14:44:43.143  2350  2350 D ssonawa1:: ActivityA(9): onPause()
+09-18 14:44:44.470  2350  2350 D ssonawa1:: ActivityA(10): onStop()
+9. App is restarted
+---Activity A is resuming from Stopped state when OnRestart is called. The system also 
+calls the onStart() method, which happens every time your activity becomes visible whether being restarted or created for the first time.
+09-18 14:46:57.877  2350  2350 D ssonawa1:: ActivityA(11): onRestart()
+09-18 14:46:57.879  2350  2350 D ssonawa1:: ActivityA(12): onStart()
+09-18 14:46:57.879  2350  2350 D ssonawa1:: ActivityA(13): onResume()
+10. Start A is triggered
+---Activity A is paused, activity A is partially obsured by Activity B. As activity A enters the paused state, the system calls the 
+onPause() method in Activity A. The system calls the onCreate() method for the Activity B. 
+The activity B becomes visible to the user when onStart() is called, but onResume() quickly follows and the activity B remains in 
+the Resumed state. Also activity A is stopped, in this state activity A is completely hidden and not visible to the user-----
+09-18 14:48:07.883  2350  2350 D ssonawa1:: ActivityA(14): onPause()
+09-18 14:48:07.930  2350  2350 D ssonawa1:: ActivityB(1): OnCreate()
+09-18 14:48:07.931  2350  2350 D ssonawa1:: ActivityB(2): onStart()
+09-18 14:48:07.933  2350  2350 D ssonawa1:: ActivityB(3): onResume()
+09-18 14:48:08.796  2350  2350 D ssonawa1:: ActivityA(15): onStop()
+11. Back button is pressed
+---Activity B goes from resumed to Paused state. Activity A is resuming from Stopped state when OnRestart is called. The system also 
+calls the onStart() method, which happens every time your activity becomes visible whether being restarted or created for the first time.
+Activity B is stopped and the UI is not visible. The system calls onDestroy() method on your activity B as the final signal that your 
+activity instance is being completely removed from the system memory.
+09-18 14:50:23.023  2350  2350 D ssonawa1:: ActivityB(4): onPause()
+09-18 14:50:23.031  2350  2350 D ssonawa1:: ActivityA(16): onRestart()
+09-18 14:50:23.031  2350  2350 D ssonawa1:: ActivityA(17): onStart()
+09-18 14:50:23.031  2350  2350 D ssonawa1:: ActivityA(18): onResume()
+09-18 14:50:23.821  2350  2350 D ssonawa1:: ActivityB(5): onStop()
+09-18 14:50:23.822  2350  2350 D ssonawa1:: ActivityB(6): onDestroy()
+12. Back button is pressed
+---Activity A goes from Resumed state to Paused state. Activity A is stopped and the UI is not visible. The system calls onDestroy()
+ method on your activity A as the final signal that your activity instance is being completely removed from the system memory.
+09-18 14:52:47.517  2350  2350 D ssonawa1:: ActivityA(19): onPause()
+09-18 14:52:48.419  2350  2350 D ssonawa1:: ActivityA(20): onStop()
+09-18 14:52:48.419  2350  2350 D ssonawa1:: ActivityA(21): onDestroy()
+
+
+
+

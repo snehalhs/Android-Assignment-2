@@ -1,0 +1,151 @@
+/*---------------Trigger Activity B then Activity A---------------*/
+09-18 15:25:17.932  2367  2367 D ssonawa1:: ActivityA(1): OnCreate()
+09-18 15:25:17.934  2367  2367 D ssonawa1:: ActivityA(2): onStart()
+09-18 15:25:17.934  2367  2367 D ssonawa1:: ActivityA(3): onResume()
+09-18 15:26:57.859  2367  2367 D ssonawa1:: ActivityA(4): onPause()
+09-18 15:26:57.912  2367  2367 D ssonawa1:: ActivityB(1): OnCreate()
+09-18 15:26:57.914  2367  2367 D ssonawa1:: ActivityB(2): onStart()
+09-18 15:26:57.915  2367  2367 D ssonawa1:: ActivityB(3): onResume()
+09-18 15:26:58.677  2367  2367 D ssonawa1:: ActivityA(5): onStop()
+09-18 15:27:10.531  2367  2367 D ssonawa1:: ActivityB(4): onPause()
+09-18 15:27:10.568  2367  2367 D ssonawa1:: ActivityA(6): onRestart()..... restarts A 
+09-18 15:27:10.570  2367  2367 D ssonawa1:: ActivityA(7): onStart()
+09-18 15:27:10.572  2367  2367 D ssonawa1:: ActivityA(8): onResume()
+09-18 15:27:11.194  2367  2367 D ssonawa1:: ActivityB(5): onStop()
+09-18 15:27:11.194  2367  2367 D ssonawa1:: ActivityB(6): onDestroy()
+
+/*----------------Trigger Activity C then Activity A---------------*/
+09-18 16:01:28.987  2355  2355 D ssonawa1:: ActivityA(1): OnCreate()
+09-18 16:01:28.989  2355  2355 D ssonawa1:: ActivityA(2): onStart()
+09-18 16:01:28.989  2355  2355 D ssonawa1:: ActivityA(3): onResume()
+09-18 16:01:32.746  2355  2355 D ssonawa1:: ActivityA(4): onPause()
+09-18 16:01:32.858  2355  2355 D ssonawa1:: ActivityC(1): OnCreate()
+09-18 16:01:32.878  2355  2355 D ssonawa1:: ActivityC(2): onStart()
+09-18 16:01:32.878  2355  2355 D ssonawa1:: ActivityC(3): onResume()
+09-18 16:01:34.073  2355  2355 D ssonawa1:: ActivityA(5): onStop()
+09-18 16:01:39.239  2355  2355 D ssonawa1:: ActivityC(4): onPause()
+09-18 16:01:39.262  2355  2355 D ssonawa1:: ActivityA(6): onRestart()..... restarts A 
+09-18 16:01:39.262  2355  2355 D ssonawa1:: ActivityA(7): onStart()
+09-18 16:01:39.262  2355  2355 D ssonawa1:: ActivityA(8): onResume()
+09-18 16:01:39.903  2355  2355 D ssonawa1:: ActivityC(5): onStop()
+09-18 16:01:39.903  2355  2355 D ssonawa1:: ActivityC(6): onDestroy()
+
+/*-----------------Home Button then restart the app----------------*/
+09-18 16:04:21.086  2352  2352 D ssonawa1:: ActivityA(1): OnCreate()
+09-18 16:04:21.087  2352  2352 D ssonawa1:: ActivityA(2): onStart()
+09-18 16:04:21.087  2352  2352 D ssonawa1:: ActivityA(3): onResume()
+09-18 16:04:29.958  2352  2352 D ssonawa1:: ActivityA(4): onPause()
+09-18 16:04:30.829  2352  2352 D ssonawa1:: ActivityA(5): onStop()
+09-18 16:04:37.730  2352  2352 D ssonawa1:: ActivityA(6): onRestart()..... restarts A 
+09-18 16:04:37.731  2352  2352 D ssonawa1:: ActivityA(7): onStart()
+09-18 16:04:37.731  2352  2352 D ssonawa1:: ActivityA(8): onResume()
+
+/*------------------Stack Right Soft key and Click on App-----------------------*/ 
+09-18 16:37:33.472  2331  2331 D ssonawa1:: ActivityA(1): OnCreate()
+09-18 16:37:33.472  2331  2331 D ssonawa1:: ActivityA(2): onStart()
+09-18 16:37:33.473  2331  2331 D ssonawa1:: ActivityA(3): onResume()
+09-18 16:38:10.653  2331  2331 D ssonawa1:: ActivityA(4): onPause()
+09-18 16:38:10.746  2331  2331 D ssonawa1:: ActivityA(5): onStop()
+09-18 16:38:21.579  2331  2331 D ssonawa1:: ActivityA(6): onRestart()..... restarts A 
+09-18 16:38:21.580  2331  2331 D ssonawa1:: ActivityA(7): onStart()
+09-18 16:38:21.580  2331  2331 D ssonawa1:: ActivityA(8): onResume()
+
+/*------------------Trigger Activity B then Back Button------------*/
+09-18 17:25:51.026  2354  2354 D ssonawa1:: ActivityA(1): OnCreate()
+09-18 17:25:51.032  2354  2354 D ssonawa1:: ActivityA(2): onStart()
+09-18 17:25:51.033  2354  2354 D ssonawa1:: ActivityA(3): onResume()
+09-18 17:26:52.675  2354  2354 D ssonawa1:: ActivityA(4): onPause()
+09-18 17:26:52.701  2354  2354 D ssonawa1:: ActivityB(1): OnCreate()
+09-18 17:26:52.705  2354  2354 D ssonawa1:: ActivityB(2): onStart()
+09-18 17:26:52.705  2354  2354 D ssonawa1:: ActivityB(3): onResume()
+09-18 17:26:53.753  2354  2354 D ssonawa1:: ActivityA(5): onStop()
+09-18 17:26:55.889  2354  2354 D ssonawa1:: ActivityB(4): onPause()
+09-18 17:26:55.898  2354  2354 D ssonawa1:: ActivityA(6): onRestart()..... restarts A 
+09-18 17:26:55.898  2354  2354 D ssonawa1:: ActivityA(7): onStart()
+09-18 17:26:55.898  2354  2354 D ssonawa1:: ActivityA(8): onResume()
+09-18 17:26:56.550  2354  2354 D ssonawa1:: ActivityB(5): onStop()
+09-18 17:26:56.550  2354  2354 D ssonawa1:: ActivityB(6): onDestroy()
+
+/*------------------Trigger Activity C then Back Button------------*/
+09-18 17:30:18.995  2368  2368 D ssonawa1:: ActivityA(1): OnCreate()
+09-18 17:30:18.998  2368  2368 D ssonawa1:: ActivityA(2): onStart()
+09-18 17:30:18.999  2368  2368 D ssonawa1:: ActivityA(3): onResume()
+09-18 17:30:31.337  2368  2368 D ssonawa1:: ActivityA(4): onPause()
+09-18 17:30:31.377  2368  2368 D ssonawa1:: ActivityC(1): OnCreate()
+09-18 17:30:31.386  2368  2368 D ssonawa1:: ActivityC(2): onStart()
+09-18 17:30:31.388  2368  2368 D ssonawa1:: ActivityC(3): onResume()
+09-18 17:30:32.362  2368  2368 D ssonawa1:: ActivityA(5): onStop()
+09-18 17:30:34.311  2368  2368 D ssonawa1:: ActivityC(4): onPause()
+09-18 17:30:34.322  2368  2368 D ssonawa1:: ActivityA(6): onRestart()..... restarts A 
+09-18 17:30:34.323  2368  2368 D ssonawa1:: ActivityA(7): onStart()
+09-18 17:30:34.323  2368  2368 D ssonawa1:: ActivityA(8): onResume()
+09-18 17:30:34.857  2368  2368 D ssonawa1:: ActivityC(5): onStop()
+09-18 17:30:34.857  2368  2368 D ssonawa1:: ActivityC(6): onDestroy()
+
+/*-------------------Trigger Activity B then Finish B-------------*/
+09-18 17:43:18.604  2353  2353 D ssonawa1:: ActivityA(1): OnCreate()
+09-18 17:43:18.606  2353  2353 D ssonawa1:: ActivityA(2): onStart()
+09-18 17:43:18.609  2353  2353 D ssonawa1:: ActivityA(3): onResume()
+09-18 17:45:28.884  2353  2353 D ssonawa1:: ActivityA(4): onPause()
+09-18 17:45:28.957  2353  2353 D ssonawa1:: ActivityB(1): OnCreate()
+09-18 17:45:28.965  2353  2353 D ssonawa1:: ActivityB(2): onStart()
+09-18 17:45:28.966  2353  2353 D ssonawa1:: ActivityB(3): onResume()
+09-18 17:45:29.880  2353  2353 D ssonawa1:: ActivityA(5): onStop()
+09-18 17:45:32.359  2353  2353 D ssonawa1:: ActivityB(4): onPause()
+09-18 17:45:32.387  2353  2353 D ssonawa1:: ActivityA(6): onRestart()..... restarts A 
+09-18 17:45:32.388  2353  2353 D ssonawa1:: ActivityA(7): onStart()
+09-18 17:45:32.389  2353  2353 D ssonawa1:: ActivityA(8): onResume()
+09-18 17:45:33.071  2353  2353 D ssonawa1:: ActivityB(5): onStop()
+09-18 17:45:33.071  2353  2353 D ssonawa1:: ActivityB(6): onDestroy()
+
+/*-------------------Trigger Activity C then Finish C-------------*/
+09-18 18:25:23.599  2369  2369 D ssonawa1:: ActivityA(1): OnCreate()
+09-18 18:25:23.602  2369  2369 D ssonawa1:: ActivityA(2): onStart()
+09-18 18:25:23.602  2369  2369 D ssonawa1:: ActivityA(3): onResume()
+09-18 18:25:29.119  2369  2369 D ssonawa1:: ActivityA(4): onPause()
+09-18 18:25:29.234  2369  2369 D ssonawa1:: ActivityC(1): OnCreate()
+09-18 18:25:29.254  2369  2369 D ssonawa1:: ActivityC(2): onStart()
+09-18 18:25:29.255  2369  2369 D ssonawa1:: ActivityC(3): onResume()
+09-18 18:25:30.457  2369  2369 D ssonawa1:: ActivityA(5): onStop()
+09-18 18:25:32.108  2369  2369 D ssonawa1:: ActivityC(4): onPause()
+09-18 18:25:32.132  2369  2369 D ssonawa1:: ActivityA(6): onRestart()..... restarts A 
+09-18 18:25:32.133  2369  2369 D ssonawa1:: ActivityA(7): onStart()
+09-18 18:25:32.133  2369  2369 D ssonawa1:: ActivityA(8): onResume()
+09-18 18:25:33.060  2369  2369 D ssonawa1:: ActivityC(5): onStop()
+09-18 18:25:33.061  2369  2369 D ssonawa1:: ActivityC(6): onDestroy()
+
+/*-------------------Trigger Activity B then Activity C then Activity A---*/
+09-18 18:29:04.300  2376  2376 D ssonawa1:: ActivityA(1): OnCreate()
+09-18 18:29:04.323  2376  2376 D ssonawa1:: ActivityA(2): onStart()
+09-18 18:29:04.323  2376  2376 D ssonawa1:: ActivityA(3): onResume()
+09-18 18:29:50.702  2376  2376 D ssonawa1:: ActivityA(4): onPause()
+09-18 18:29:50.833  2376  2376 D ssonawa1:: ActivityB(1): OnCreate()
+09-18 18:29:50.840  2376  2376 D ssonawa1:: ActivityB(2): onStart()
+09-18 18:29:50.843  2376  2376 D ssonawa1:: ActivityB(3): onResume()
+09-18 18:29:51.706  2376  2376 D ssonawa1:: ActivityA(5): onStop()
+09-18 18:29:53.172  2376  2376 D ssonawa1:: ActivityB(4): onPause()
+09-18 18:29:53.216  2376  2376 D ssonawa1:: ActivityC(1): OnCreate()
+09-18 18:29:53.230  2376  2376 D ssonawa1:: ActivityC(2): onStart()
+09-18 18:29:53.234  2376  2376 D ssonawa1:: ActivityC(3): onResume()
+09-18 18:29:54.054  2376  2376 D ssonawa1:: ActivityB(5): onStop()
+09-18 18:30:08.660  2376  2376 D ssonawa1:: ActivityB(6): onDestroy()
+09-18 18:30:08.704  2376  2376 D ssonawa1:: ActivityC(4): onPause()
+09-18 18:30:08.739  2376  2376 D ssonawa1:: ActivityA(6): onRestart()..... restarts A 
+09-18 18:30:08.740  2376  2376 D ssonawa1:: ActivityA(7): onStart()
+09-18 18:30:08.741  2376  2376 D ssonawa1:: ActivityA(8): onResume()
+09-18 18:30:09.371  2376  2376 D ssonawa1:: ActivityC(5): onStop()
+09-18 18:30:09.371  2376  2376 D ssonawa1:: ActivityC(6): onDestroy()
+
+/*-------------------Stack Soft key and back button---------------------*/
+09-18 21:04:24.403  2368  2368 D ssonawa1:: ActivityA(1): OnCreate()
+09-18 21:04:24.405  2368  2368 D ssonawa1:: ActivityA(2): onStart()
+09-18 21:04:24.406  2368  2368 D ssonawa1:: ActivityA(3): onResume()
+09-18 21:05:45.757  2368  2368 D ssonawa1:: ActivityA(4): onPause()
+09-18 21:05:45.801  2368  2368 D ssonawa1:: ActivityA(5): onStop()
+09-18 21:05:49.232  2368  2368 D ssonawa1:: ActivityA(6): onRestart()..... restarts A 
+09-18 21:05:49.236  2368  2368 D ssonawa1:: ActivityA(7): onStart()
+09-18 21:05:49.236  2368  2368 D ssonawa1:: ActivityA(8): onResume()
+
+
+
+
